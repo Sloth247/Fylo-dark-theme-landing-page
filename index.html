@@ -45,19 +45,17 @@
     </style>
   </head>
   <body>
-    <header class="wrapper">
-      <div class="header-container">
+    <header class="header wrapper">
+      <nav class="header-container">
         <div class="header-logo">
-          <img src="images/logo.svg" alt="Fylo" />
+          <img src="images/logo.svg" alt="fylo">
         </div>
-        <nav>
           <ul>
             <li>Features</li>
             <li>Team</li>
             <li>Sign In</li>
           </ul>
         </nav>
-      </div>
       <div class="introduction wrapper">
         <div class="main-visual">
           <img src="images/illustration-intro.png" alt="main-visual" />
@@ -127,7 +125,7 @@
             Securely share files and folders with friends, family and colleagues
             for live collaboration. No email attachments required.
           </p>
-          <p class="arrow-text">See how Fylo works</p>
+          <a href="#" class="arrow-text">See how Fylo works<svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><circle id="b" cx="6" cy="6" r="6"/><filter x="-25%" y="-25%" width="150%" height="150%" filterUnits="objectBoundingBox" id="a"><feOffset in="SourceAlpha" result="shadowOffsetOuter1"/><feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"/><feColorMatrix values="0 0 0 0 0.384313725 0 0 0 0 0.878431373 0 0 0 0 0.850980392 0 0 0 0.811141304 0" in="shadowBlurOuter1"/></filter></defs><g fill="none" fill-rule="evenodd"><g transform="translate(2 2)"><use fill="#000" filter="url(#a)" xlink:href="#b"/><use fill="#62E0D9" xlink:href="#b"/></g><path d="M8.582 6l-.363.35 1.452 1.4H5.333v.5h4.338L8.22 9.65l.363.35 2.074-2z" fill="#1B2330"/></g></svg></a>
         </div>
       </section>
       <section class="quote wrapper">
@@ -176,29 +174,37 @@
           </div>
         </div>
       </section>
-      <section class="access">
-        <div class="text">
-          <h2>Get early access today</h2>
-          <p>
+      
+    </main>
+    
+    <aside class="access">
+      <div class="container">
+        <div class="access__card">
+          <h2 class="access__title">Get early access today</h2>
+          <p class="access__description">
             It only takes a minute to sign up and our free starter tier is
             extremely generous. If you have any questions, our support team
             would be happy to help you.
           </p>
-        </div>
-        <form action="#" id="form" novalidate>
-          <input
-            type="email"
-            class="email"
-            placeholder="email@example.com"
-            required
-          />
-          <button type="submit" class="btn for-free">
+          <form action="#" id="form" novalidate>
+            <div class="form-control">
+              <input
+              type="email"
+              class="email"
+              placeholder="email@example.com"
+              required
+              />
+              <p class="warning hidden">Please enter a valid email address</p>
+            </div>
+            
+            <button type="submit" class="btn for-free">
             Get Started For Free
-          </button>
-          <p class="warning hidden">Please enter a valid email address</p>
-        </form>
-      </section>
-    </main>
+            </button>
+            
+          </form>
+        </div>
+      </div>
+    </aside>
 
     <footer class="wrapper">
       <div class="footer-logo"><img src="images/logo.svg" alt=Fylo"></div>
